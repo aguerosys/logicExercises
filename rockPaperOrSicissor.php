@@ -9,9 +9,9 @@
         $sicissor  = 'sicissor';
         
         if ($userOption == $rock && $cpuOption == $sicissor || $userOption == $paper && $cpuOption == $rock || $userOption == $sicissor && $cpuOption == $paper){
-            echo('Has ganado');
+            echo('Win!');
         }else{
-            echo('Has perdido!');
+            echo('Lose!');
         }
     }
 
