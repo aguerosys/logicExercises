@@ -1,20 +1,20 @@
 <?php 
-    $piedra = 'piedra';
-    $papel = 'papel';
-    $tijera  = 'tijera';
+    $rock = 'rock';
+    $paper = 'paper';
+    $sicissor  = 'sicissor';
 
     function rockPaperOrSicissor($userOption, $cpuOption){
-        $piedra = 'piedra';
-        $papel = 'papel';
-        $tijera  = 'tijera';
+        $rock = 'rock';
+        $paper = 'paper';
+        $sicissor  = 'sicissor';
         
-        if ($userOption == $piedra && $cpuOption == $tijera || $userOption == $papel && $cpuOption == $piedra || $userOption == $tijera && $cpuOption == $papel){
+        if ($userOption == $rock && $cpuOption == $sicissor || $userOption == $paper && $cpuOption == $rock || $userOption == $sicissor && $cpuOption == $paper){
             echo('Has ganado');
         }else{
             echo('Has perdido!');
         }
     }
 
-    rockPaperOrSicissor($papel, $piedra);
+    rockPaperOrSicissor($paper, $rock);
 
 ?>
